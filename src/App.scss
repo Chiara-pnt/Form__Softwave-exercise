@@ -1,0 +1,27 @@
+body {
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(./assets/bg-intro-desktop.png);
+
+    @media screen and (max-device-width: 375px) {
+        background-image: url(./assets/bg-intro-mobile.png) repeat;
+        background-size: cover;
+    }
+}
+
+.App{
+    display: flex;
+
+    .container{
+        display: grid;
+
+        .header{
+            color: white;
+            width: 50%;
+            text-align: center;
+        }
+
+        .box{
+            background-color:hsl(248, 32%, 49%);
+        }
+    }
+}
