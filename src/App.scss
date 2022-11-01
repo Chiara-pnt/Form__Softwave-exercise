@@ -2,26 +2,96 @@ body {
     background-color: hsl(0, 100%, 74%) ;
     background-image: url(./assets/bg-intro-desktop.png);
 
+    color: white;
+    
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+
     @media screen and (max-device-width: 375px) {
         background-image: url(./assets/bg-intro-mobile.png) repeat;
         background-size: cover;
+        justify-content: center;
+        text-align: center;
+        
+        
     }
-}
 
-.App{
-    display: flex;
+    .App{
+        
+        flex-direction: row;
+        width: 100%;
+       
+        @media screen and (max-device-width: 375px) {
+            background-size: 375px;
+            
 
-    .container{
-        display: grid;
+        }
+
+        .form-container{
+            display: flex;
+            width: 100%;
+            
+
+            @media screen and (max-device-width: 375px) {
+                display: block;
+                margin: auto;
+              
+                
+            }
+
+        }
 
         .header{
-            color: white;
             width: 50%;
-            text-align: center;
+            justify-content: center;
+            margin: 70px;
+            margin-top: 200px;
+
+            @media screen and (max-device-width: 375px) {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+                margin-top: 50px;
+                padding: 20px;
+            }
+
         }
 
-        .box{
-            background-color:hsl(248, 32%, 49%);
+        .trial-form{
+            
+            width: 100%;
+            margin: auto;
+            
+
+            .trial{
+                background-color: hsl(248, 32%, 49%);
+                border-radius: 10px;
+                box-shadow: 0 8px 1px rgba(182, 108, 108, 0.5);
+                width: 50%;
+                padding: 10px;
+                margin-bottom: 20px;
+
+                @media screen and (max-device-width: 375px) {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+
+            .form{
+                width: 50%;
+                 padding: 10px;
+                @media screen and (max-device-width: 375px) {
+                    width: 80%;
+                    margin: auto;
+
+                }
+            }
         }
+
+        
+
+       
     }
 }
